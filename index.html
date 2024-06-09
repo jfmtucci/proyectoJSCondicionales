@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Manipulacion de DOM JS</title>
+  </head>
+  <body class="index">
+    <nav>
+      <div>
+        <button id="ejer1">Ejercicio 1</button>
+        <button id="ejer2">Ejercicio 2</button>
+        <button id="ejer3">Ejercicio 3</button>
+      </div>
+    </nav>
+    <main>
+      <iframe id="miIframe" height="100%" width="100%" frameborder="0"></iframe>
+    </main>
+    <script>
+      document.getElementById("ejer1").addEventListener("click", () => {
+        document.getElementById("miIframe").src = "ejercicio1.html";
+      });
+      document.getElementById("ejer2").addEventListener("click", () => {
+        document.getElementById("miIframe").src = "ejercicio2.html";
+      });
+      document.getElementById("ejer3").addEventListener("click", () => {
+        document.getElementById("miIframe").src = "ejercicio3.html";
+      });
+    </script>
+  </body>
+</html>
